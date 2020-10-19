@@ -1,0 +1,19 @@
+
+
+
+
+异动点检测-主函数：
+	Advanced_ver_10_17.m	代码+ 注释+ 算法思想    （LT 对 YSH方法 进行优化的版本）
+	Baseline_ver_Fix_K1_005_K2_05.m		调用 YSH的方法（待对比 Baseline）
+	
+主函数 调用的 函数：
+	my_plot.m		画图，把 异动点 描绘在 滤波后曲线 上
+	func_AbnormDetect.m		YSH写的方法（Baseline）
+	func_AdamGradientDescent.m		梯度下降 数值优化
+	
+注意事项
+	读取 原始波形SP 两个方法，参见 另一个 TXT
+	
+	读取数据，注意
+		是否 有NaN值（已处理）
+		是否 掉点（未处理）

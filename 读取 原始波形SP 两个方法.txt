@@ -1,0 +1,23 @@
+
+
+
+读取 原始波形SP 两个方法
+
+	方法一
+	
+	% 读取 xls数据
+	% total_num = 10000;
+	% t = (1:total_num);
+	% addpath  '../';
+	% [num,txt,SP] = xlsread('../../latest_parameter.xls', 1, 'Q2: Q10001');
+	% SP(total_num+1:end, :) = [];
+	% SP=str2double(SP);
+	% save D_latest_parameter SP;
+	% 读取 xls数据
+	
+	方法二
+	
+    % 读取 mat数据
+    addpath ('..\..\..\Z-Dataset\01-Internship\BaiDuYun\每一列特征-MAT');
+    load D_latest_parameter
+    % 读取 mat数据
