@@ -18,8 +18,11 @@
 3. 目前，基于无监督的方法（比如统计），最典型的就是  Grubbs Test 。
 twitter方法【 [源码-R版本](https://github.com/twitter/AnomalyDetection)，[论文](https://arxiv.org/pdf/1704.07706.pdf)】，核心思想就是 Grubbs Test（很多地方用这个）：
 	- 假设 原始数据服从 正态分布，构造 学生T分布  统计量C。其中，x_bar 和 s 表示时序数据X 的 均值 和 标准差。
+	        - ![](https://img-1300025586.cos.ap-shanghai.myqcloud.com/abnormal-detection.png)
 	- 如果满足：	
+		- ![](https://img-1300025586.cos.ap-shanghai.myqcloud.com/abnormal-detection(1).png)
 	- 就认为，当前测试的这个点，是异常的。
+		- ![](https://img-1300025586.cos.ap-shanghai.myqcloud.com/abnormal-detection(2).png)
 
 
 4. 但是，推特方法具有 [局限性](https://anomaly.io/anomaly-detection-twitter-r/) ，对于 数据集 要求较高。
@@ -45,10 +48,10 @@ twitter方法【 [源码-R版本](https://github.com/twitter/AnomalyDetection)�
 	  `1. 代码+功能说明\先看这里！！代码文件说明.txt`
 
 ### 五、数据集+实验效果
-#### 1. 数据集说明：
+  1. 数据集说明：
 - 用户用电 数据（比如 电流、功率）。
 - 在 /data 目录 下
-#### 2. 效果
+  2. 效果
 - 在 /result 目录 下
 - 展示形式都是fig图： 滤波后曲线 上 描点（异动点）
 
