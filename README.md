@@ -23,6 +23,7 @@ twitter方法【 [源码-R版本](https://github.com/twitter/AnomalyDetection)�
 		- ![](https://img-1300025586.cos.ap-shanghai.myqcloud.com/abnormal-detection(1).png)
 	- 就认为，当前测试的这个点，是异常的。
 		- ![](https://img-1300025586.cos.ap-shanghai.myqcloud.com/abnormal-detection(2).png)
+	- 剔除当前异常点，用剩下的点继续计算（重复以上步骤），直到没有异常为止。
 
 
 4. 但是，推特方法具有 [局限性](https://anomaly.io/anomaly-detection-twitter-r/) ，对于 数据集 要求较高。
